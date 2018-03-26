@@ -20,14 +20,14 @@ function resizeHero() {
     if ($(mobileMenu).css("display") !== "none") {
         calcHeight -= $(mobileMenu).outerHeight();
         $(logo).hide();
-        console.log($(rightMenu).children());
+
         if ($(rightMenu).hasClass("align-right")) {
-            console.log("HAS CLASS");
             $(rightMenu).removeClass("align-right");
         }
     } else {
         calcHeight -= $(topMenu).outerHeight();
         $(logo).show();
+        
         if (!$(rightMenu).hasClass("align-right")) {
             $(rightMenu).addClass("align-right");
         }
