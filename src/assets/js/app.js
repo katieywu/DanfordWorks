@@ -10,13 +10,18 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+resizeHero();
 
-// Calculate and set height of hero image
-let calcHeight = $(".hero").height();
-if ($(topMenu).css("display") === "none") {
-    calcHeight -= $(mobileMenu).outerHeight();
-} else {
-    calcHeight -= $(topMenu).outerHeight();
-    console.log(calcHeight);
-}
-$(".hero").height(calcHeight);   
+function resizeHero() {
+    // Calculate and set height of hero image
+    let calcHeight = $(window).height();
+
+    if ($(topMenu).css("display") === "none") {
+        calcHeight -= $(mobileMenu).outerHeight();
+    } else {
+        calcHeight -= $(topMenu).outerHeight();
+    }
+    $(".hero").height(calcHeight);  
+}; 
+
+$(window).resize(resizeHero);
