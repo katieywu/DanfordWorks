@@ -1,0 +1,24 @@
+
+.hero {
+    position: relative;
+    height:100vh;
+    background: url('../../assets/img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#logo {
+    margin: 0 10%;
+    padding: 25px 0;
+    min-width: 100px;
+    width: 10%;
+}
+
+.menu {
+    font-family: $header-font-family;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
