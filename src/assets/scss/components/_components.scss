@@ -11,8 +11,14 @@
 }
 
 #logo {
-    // margin: 0 auto;
+    margin: 0 10%;
     padding: 25px 0;
     min-width: 100px;
-    width: 25%;
+    width: 10%;
+}
+
+.menu {
+    font-family: $header-font-family;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
 }
