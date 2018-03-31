@@ -66,7 +66,7 @@
     }
 
     .image-hover-wrapper-reveal {
-      background-color: rgba(0, 0, 0, 0.25);
+      background-color: rgba($black, 0.25);
       color: $white;
       display: inline;
       height: 100%;
@@ -96,6 +96,6 @@
 
 .fixed-font-size {
     font-family: $header-font-family;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
 }
