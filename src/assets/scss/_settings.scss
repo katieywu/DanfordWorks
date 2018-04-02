@@ -102,6 +102,7 @@ $print-transparent-backgrounds: true;
 // Custom globals
 $global-transition: all 0.25s ease-in;
 $image-hover-wrapper-transition: all 0.35s ease-in;
+$header-letter-spacing: 0.1rem;
 
 @include add-foundation-colors;
 

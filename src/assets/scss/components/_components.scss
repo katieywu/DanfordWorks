@@ -1,3 +1,28 @@
+.inverse {
+    background-color: $black;
+    color: $white;
+}
+
+.wrap {
+    font-family: $body-font-family;
+    margin: 8% 20%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.bodyFont {
+    font-family: $body-font-family;
+}
+
+.headerFont {
+    font-family: $header-font-family;
+    letter-spacing: $header-letter-spacing;
+}
+
 .hero {
     position: relative;
     height:100vh;
@@ -28,14 +53,7 @@
 .menu {
     font-family: $header-font-family;
     font-size: 0.8rem;
-    letter-spacing: 1.5px;
-}
-
-.wrap {
-    font-family: $body-font-family;
-    margin: 8% 20%;
-    line-height: 1.6;
-    text-align: center;
+    letter-spacing: $header-letter-spacing;
 }
 
 .three-grid {
@@ -91,7 +109,7 @@
 .fixed-font-size {
     font-family: $header-font-family;
     font-size: 1.8rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: $header-letter-spacing;
 }
 
 .vertical .menu :hover{
@@ -101,4 +119,12 @@
 
 #leftMenu > li > a:hover, #rightMenu > li > a:hover {
     opacity: 0.8;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#emailForm {
+    margin: 8% auto;
 }
