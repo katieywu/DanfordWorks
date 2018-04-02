@@ -16,7 +16,6 @@ function resizeHero() {
     // Calculate and set height of hero image
     let calcHeight = $(window).height();
 
-<<<<<<< HEAD
     // if mobile is active
     if ($(mobileMenu).css("display") !== "none") {
         calcHeight -= $(mobileMenu).outerHeight();
@@ -32,12 +31,6 @@ function resizeHero() {
         if (!$(rightMenu).hasClass("align-right")) {
             $(rightMenu).addClass("align-right");
         }
-=======
-    if ($(topMenu).css("display") === "none") {
-        calcHeight -= $(mobileMenu).outerHeight();
-    } else {
-        calcHeight -= $(topMenu).outerHeight();
->>>>>>> master
     }
     $(".hero").height(calcHeight);  
 }; 
