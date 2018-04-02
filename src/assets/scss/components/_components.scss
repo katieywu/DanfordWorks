@@ -1,3 +1,8 @@
+footer {
+    background-color: $secondary-color;
+    height: 180px;
+}
+
 .inverse {
     background-color: $black;
     color: $white;
@@ -128,3 +133,4 @@ button:hover {
 #emailForm {
     margin: 8% auto;
 }
+
