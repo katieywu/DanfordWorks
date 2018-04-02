@@ -1,12 +1,12 @@
-<div id="mobileMenu" class="title-bar" data-responsive-toggle="topMenu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="topMenu"></button>
-    <div class="title-bar-title">DW</div>
+<div id="mobileMenu" class="top-bar show-for-small-only" data-responsive-toggle="topMenu" data-hide-for="medium">
+    <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
+    <img id="mobileLogo" src="../assets/img/logo.svg">        
 </div>
 
 <!-- TOP BAR MENU -->
-<nav class="grid-x align-center-middle" id="topMenu">
+<nav class="grid-x align-center-middle" id="topMenu" data-auto-height-"true" data-animate-height="true">
     <div class="medium-4 cell">
-        <ul class="menu vertical medium-horizontal align-left"
+        <ul id="leftMenu" class="menu vertical medium-horizontal align-left"
         data-responsive-menu="drilldown medium-dropdown">
             <li>
                 <a href="#0">ABOUT</a>
@@ -23,7 +23,8 @@
     <img class="medium-4 cell" id="logo" src="../assets/img/logo.svg">
     <!-- </div> -->
     <div class="medium-4 cell">
-        <ul class="menu align-right">
+        <ul id="rightMenu" class="menu vertical medium-horizontal align-right"
+        data-responsive-menu="drilldown medium-dropdown">
             <li><a href="test2.html">PRESS</a></li>
             <li><a href="#">JOURNAL</a></li>
             <li><a href="#">MEMBERS/LOGIN</a></li>
@@ -35,4 +36,68 @@
 <div class="hero"></div>
 
 <!-- DESCRIPTION SECTION -->
-<h1>DANFORD WORKS</h1>
+<div class="grid-x align-center-middle">
+    <h3 class="wrap small-10 medium-8 cell">Danford Works is the world’s first immersive physical therapy experience. 
+        We have both a physical presence, as well as an online platform to keep our 
+        members active and healthy.</h3>
+</div>
+
+<div class="grid-x grid-padding-x grid-padding-y three-grid">
+    <div class="medium-4 cell image-hover-wrapper">
+        <div class="image-hover-wrapper-banner">
+            <div class="fixed-font-size">PHILOSOPHY</div>
+        </div>
+        <a href="#"><img src="../assets/img/sitting-guy.png">
+            <div class="image-hover-wrapper-reveal">
+            </div>
+        </a>
+    </div>
+    <div class="medium-4 cell image-hover-wrapper">
+        <div class="image-hover-wrapper-banner">
+            <div class="fixed-font-size">LOCATIONS</div>
+        </div>
+        <a href="#"><img src="../assets/img/coffee.png">
+            <div class="image-hover-wrapper-reveal">
+            </div>
+        </a>
+    </div>
+    <div class="medium-4 cell image-hover-wrapper">
+        <div class="image-hover-wrapper-banner">
+            <div class="fixed-font-size">STAFF</div>
+        </div>
+        <a href="#"><img src="../assets/img/legging.png">
+            <div class="image-hover-wrapper-reveal">
+            </div>
+        </a>
+    </div>    
+</div>
+
+<!-- STAY IN TOUCH SECTION -->
+<form action="" method="POST">
+    <div id="emailForm" class="grid-x align-center-middle">
+        <div class="medium-6 cell">
+            <h6 class="bodyFont">Stay connected</h6>
+            <div class="grid-x">
+                <input class="cell small-9" style="margin:0" type="text" name="email" placeholder="email@danfordworks.com">
+                <button class="cell small-3 inverse headerFont" type="submit" value="submitEmail">
+                    <div>SUBMIT</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- FOOTER -->
+<footer>
+    <!-- <div class="grid-x align-center-middle">
+        <div class="cell medium-4">
+            <label class="headerFont">DIRECTORY</label>
+        </div>
+        <div class="cell medium-4">
+            <img src="../assets/img/smallLogo.svg">            
+        </div>
+        <div class="cell medium-4">
+
+        </div>
+    </div> -->
+</footer>

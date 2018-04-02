@@ -101,6 +101,8 @@ $print-transparent-backgrounds: true;
 
 // Custom globals
 $global-transition: all 0.25s ease-in;
+$image-hover-wrapper-transition: all 0.35s ease-in;
+$header-letter-spacing: 0.1rem;
 
 @include add-foundation-colors;
 
@@ -153,7 +155,7 @@ $header-styles: (
   medium: (
     'h1': ('font-size': 48),
     'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h3': ('font-size': 29),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -850,10 +852,10 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
-$topbar-input-width: 200px;
+$topbar-input-width: 300px;
 $topbar-unstack-breakpoint: medium;
 
 // 56. Xy Grid

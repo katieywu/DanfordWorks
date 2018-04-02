@@ -16,10 +16,21 @@ function resizeHero() {
     // Calculate and set height of hero image
     let calcHeight = $(window).height();
 
-    if ($(topMenu).css("display") === "none") {
+    // if mobile is active
+    if ($(mobileMenu).css("display") !== "none") {
         calcHeight -= $(mobileMenu).outerHeight();
+        $(logo).hide();
+
+        if ($(rightMenu).hasClass("align-right")) {
+            $(rightMenu).removeClass("align-right");
+        }
     } else {
         calcHeight -= $(topMenu).outerHeight();
+        $(logo).show();
+        
+        if (!$(rightMenu).hasClass("align-right")) {
+            $(rightMenu).addClass("align-right");
+        }
     }
     $(".hero").height(calcHeight);  
 }; 
