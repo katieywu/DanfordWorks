@@ -1,12 +1,12 @@
-<div id="mobileMenu" class="title-bar" data-responsive-toggle="topMenu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="topMenu"></button>
-    <div class="title-bar-title">DW</div>
+<div id="mobileMenu" class="top-bar show-for-small-only" data-responsive-toggle="topMenu" data-hide-for="medium">
+    <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
+    <img class="medium-4 cell" id="mobileLogo" src="../assets/img/logo.svg">        
 </div>
 
 <!-- TOP BAR MENU -->
-<nav class="grid-x align-center-middle" id="topMenu">
+<nav class="grid-x align-center-middle" id="topMenu" data-auto-height-"true" data-animate-height="true">
     <div class="medium-4 cell">
-        <ul class="menu vertical medium-horizontal align-left"
+        <ul id="leftMenu" class="menu vertical medium-horizontal align-left"
         data-responsive-menu="drilldown medium-dropdown">
             <li>
                 <a href="#0">ABOUT</a>
