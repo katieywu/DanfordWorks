@@ -1,6 +1,6 @@
 footer {
     background-color: $secondary-color;
-    height: 180px;
+    padding: 40px 8.3%;
 }
 
 .inverse {
@@ -17,6 +17,14 @@ footer {
 
 .text-align-left {
     text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 .bodyFont {
@@ -122,15 +130,51 @@ footer {
     color: $white;
 }
 
-#leftMenu > li > a:hover, #rightMenu > li > a:hover {
-    opacity: 0.8;
-}
-
-button:hover {
-    opacity: 0.9;
+#leftMenu > li > a:hover, #rightMenu > li > a:hover, button:hover {
+    opacity: $hover-opacity;
 }
 
 #emailForm {
-    margin: 8% auto;
+    margin: 8% 25px;
 }
 
+.socialIcon {
+    height: 16px;
+    margin: 0 3px;
+    text-align: center;
+
+    img {
+        height: 100%;
+
+        &:hover {
+            opacity: $hover-opacity;
+        }
+    }
+}
+
+#footerLogo {
+    width: 25px;
+}
+
+.topMargin15 {
+    margin: 15px 0 0 0 ;
+}
+
+.topMargin30 {
+    margin: 30px 0 0 0 ;
+}
+
+.footerText {
+    font-size: 0.8rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footerLabel {
+    font-family: $body-font-family;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+
+}
