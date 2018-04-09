@@ -1,11 +1,20 @@
+@mixin headerFont {
+    font-family: $header-font-family;
+    letter-spacing: $header-letter-spacing;
+}
+
+@mixin inverse {
+    background-color: $black;
+    color: $white;
+}
+
 footer {
     background-color: $secondary-color;
     padding: 40px 8.3%;
 }
 
 .inverse {
-    background-color: $black;
-    color: $white;
+    @include inverse;
 }
 
 .wrap {
@@ -32,14 +41,19 @@ footer {
 }
 
 .headerFont {
-    font-family: $header-font-family;
-    letter-spacing: $header-letter-spacing;
+    @include headerFont;
+}
+
+.heroFont {
+    @include headerFont;
+    letter-spacing: 0.5rem;
+    color: $white;
 }
 
 .hero {
     position: relative;
     height:100vh;
-    background: url('../../assets/img/hero.jpg') no-repeat center center;
+    background: url('../../assets/img/heros/hero.jpg') no-repeat center center;
     background-size: cover;
     background-position: top center;
     -webkit-background-size: cover;
@@ -48,7 +62,6 @@ footer {
 }
 
 #logo {
-    margin: 0 10%;
     padding: 25px 0;
     min-width: 100px;
     width: 10%;
@@ -125,12 +138,11 @@ footer {
     letter-spacing: $header-letter-spacing;
 }
 
-.vertical .menu :hover{
-    background-color: $black;
-    color: $white;
+.vertical .menu :hover, #leftMenu > li > a:hover, #rightMenu > li > a:hover {
+    @include inverse;
 }
 
-#leftMenu > li > a:hover, #rightMenu > li > a:hover, button:hover {
+button:hover {
     opacity: $hover-opacity;
 }
 
@@ -176,5 +188,9 @@ a:hover {
     font-family: $body-font-family;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
+}
 
+// CSS FOR MEMBERS/LOGIN PAGE
+.membersHero {
+    background: url('../../assets/img/heros/reaching_barbells_dark.png') no-repeat center center;    
 }
