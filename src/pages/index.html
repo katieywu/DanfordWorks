@@ -1,6 +1,6 @@
-<div id="mobileMenu" class="top-bar show-for-small-only" data-responsive-toggle="topMenu" data-hide-for="medium">
-    <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
-    <img id="mobileLogo" src="../assets/img/logo.svg">        
+<div id="mobileMenu" class="top-bar" data-sticky data-margin-top="0" data-responsive-toggle="topMenu" data-hide-for="medium">
+        <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
+        <img id="mobileLogo" src="../assets/img/logo.svg">        
 </div>
 
 <!-- TOP BAR MENU -->
@@ -19,8 +19,11 @@
             <li><a href="#0">LOCATIONS</a></li>
         </ul>
     </div>
-    <!-- <div class="medium-4 cell"> -->
-    <img class="medium-4 cell" id="logo" src="../assets/img/logo.svg">
+    <div class="medium-4 cell">
+        <div class="grid-x align-center-middle">
+            <img class="medium-4 cell" id="logo" src="../assets/img/logo.svg">
+        </div>
+    </div>
     <!-- </div> -->
     <div class="medium-4 cell">
         <ul id="rightMenu" class="menu vertical medium-horizontal align-right"
@@ -90,16 +93,16 @@
 <!-- FOOTER -->
 <footer>
     <div class="grid-x align-center">
-        <div class="cell medium-4">
+        <div id="footerOne" class="cell small-6 medium-4">
             <label class="headerFont">DIRECTORY</label>
             <div class="grid-x align-left topMargin15">
-                <div class="grid-y cell small-4">
+                <div class="grid-y cell small-6">
                     <a href="#" class="footerLabel">Home</a>
                     <a href="about.html" class="footerLabel">About</a>
                     <a href="philosophy.html" class="footerLabel">Philosophy</a>
                     <a href="facility.html" class="footerLabel">Facility</a>
                 </div>
-                <div class="cell grid-y small-4">
+                <div class="cell grid-y small-6">
                     <a href="staff.html" class="footerLabel">Staff</a>
                     <a href="press.html" class="footerLabel">Press</a>
                     <a href="platform.html" class="footerLabel">Platform</a>
@@ -107,13 +110,13 @@
                 </div>
             </div>
         </div>
-        <div class="cell medium-4">
+        <div id="footerTwo" class="cell medium-4 show-for-medium">
             <div class="grid-x align-center">
                 <img id="footerLogo" class="cell" src="../assets/img/smallLogo.svg">
                 <p class="text-align-center cell topMargin30 align-self-bottom footerText">© 2018 Danford Works</p>
             </div>
         </div>
-        <div class="cell medium-4">
+        <div id="footerThree" class="cell small-6 medium-4">
             <div class="grid-y align-spaced">
                 <div class="grid-x align-right">
                     <a href="http://instagram.com" class="socialIcon cell small-1">
