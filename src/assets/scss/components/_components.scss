@@ -17,11 +17,24 @@ footer {
     @include inverse;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.noPaddingMargin {
+    padding: 0;
+    margin: 0;
+}
+
 .wrap {
     font-family: $body-font-family;
     margin: 8% 20%;
     line-height: 1.6;
     text-align: center;
+}
+
+.fullWidth {
+    width: 100%;
 }
 
 .text-align-left {
@@ -193,4 +206,40 @@ a:hover {
 // CSS FOR MEMBERS/LOGIN PAGE
 .membersHero {
     background: url('../../assets/img/heros/reaching_barbells_dark.png') no-repeat center center;    
+}
+
+// CSS FOR ABOUT PAGE
+.aboutHero {
+    background: url('../../assets/img/heros/arms_raised.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.aboutGridCell {
+    padding: 8%;
+}
+
+.aboutGridText {
+    padding-top: 10px;
+    line-height: 2.5rem;
+}
+
+// SMALL SCREENS
+@media (max-width: 639px) {
+    .aboutGridText {
+        line-height: $global-lineheight;
+    }
+    .aboutGridCell {
+        padding: 8%;
+    }
+}
+
+// MEDIUM SCREENS
+@media (min-width: 639px) and (max-width: 1010px) {
+    .aboutGridText {
+        font-size: 1rem;
+        line-height: $global-lineheight;
+    }
+    .aboutGridCell {
+        padding: 5%;
+    }
 }
