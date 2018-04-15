@@ -8,6 +8,10 @@
     color: $white;
 }
 
+@mixin topBottom {
+    margin: 8% 0;
+}
+
 footer {
     background-color: $secondary-color;
     padding: 40px 8.3%;
@@ -30,6 +34,11 @@ footer {
     font-family: $body-font-family;
     margin: 8% 20%;
     line-height: 1.6;
+    text-align: center;
+}
+
+.topBottom {
+    @include topBottom;
     text-align: center;
 }
 
@@ -220,6 +229,7 @@ a:hover {
 
 .aboutGridText {
     padding-top: 10px;
+    margin: 0;
     line-height: 2.5rem;
 }
 
@@ -241,5 +251,17 @@ a:hover {
     }
     .aboutGridCell {
         padding: 5%;
+    }
+}
+
+// CONTACT PAGE
+.letterSpacingBig {
+    letter-spacing: 0.4rem;
+}
+
+#contactList {
+    text-align: center;
+    @include breakpoint(medium up) {
+        text-align: left;
     }
 }
