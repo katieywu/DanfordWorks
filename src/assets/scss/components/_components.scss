@@ -1,6 +1,7 @@
 @mixin headerFont {
     font-family: $header-font-family;
     letter-spacing: $header-letter-spacing;
+    text-transform: uppercase;
 }
 
 @mixin inverse {
@@ -40,6 +41,22 @@ footer {
 .topBottom {
     @include topBottom;
     text-align: center;
+}
+
+.bottomMargin {
+    margin-bottom: 8%;
+}
+
+.topMargin15 {
+    margin: 15px 0 0 0 ;
+}
+
+.topMargin30 {
+    margin: 30px 0 0 0 ;
+}
+
+.topPadding15 {
+    padding: 15px 0 0 0 ;
 }
 
 .fullWidth {
@@ -190,14 +207,6 @@ button:hover {
     width: 25px;
 }
 
-.topMargin15 {
-    margin: 15px 0 0 0 ;
-}
-
-.topMargin30 {
-    margin: 30px 0 0 0 ;
-}
-
 .footerText {
     font-size: 0.8rem;
 }
@@ -264,4 +273,12 @@ a:hover {
     @include breakpoint(medium up) {
         text-align: left;
     }
+}
+
+// JOURNAL PAGE
+.articleImg {
+    height: 260px;
+    width: 540px;
+    object-fit: cover;
+    
 }
