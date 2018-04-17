@@ -43,6 +43,10 @@ footer {
     text-align: center;
 }
 
+.topMargin {
+    margin-top: 8%;
+}
+
 .bottomMargin {
     margin-bottom: 8%;
 }
@@ -239,7 +243,7 @@ a:hover {
 .aboutGridText {
     padding-top: 10px;
     margin: 0;
-    line-height: 2.5rem;
+    line-height: $global-big-lineheight;
 }
 
 // SMALL SCREENS
@@ -268,6 +272,10 @@ a:hover {
     letter-spacing: 0.4rem;
 }
 
+.letterSpacingMed {
+    letter-spacing: $header-letter-spacing;
+}
+
 #contactList {
     text-align: center;
     @include breakpoint(medium up) {
@@ -281,4 +289,9 @@ a:hover {
     width: 540px;
     object-fit: cover;
     
+}
+
+// ARTICLE PAGE
+.articleText {
+    line-height: $global-big-lineheight;
 }
