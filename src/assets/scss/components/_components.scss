@@ -96,9 +96,8 @@ footer {
 .hero {
     position: relative;
     height:100vh;
-    background: url('../../assets/img/heros/hero.jpg') no-repeat center center;
+    background: url('../../assets/img/heros/indexHero.jpg') no-repeat center center;
     background-size: cover;
-    background-position: top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -227,12 +226,13 @@ a:hover {
 
 // CSS FOR MEMBERS/LOGIN PAGE
 .membersHero {
-    background: url('../../assets/img/heros/reaching_barbells_dark.png') no-repeat center center;    
+    background: url('../../assets/img/heros/loginHero.jpg') no-repeat center center;    
+    background-size: cover;
 }
 
 // CSS FOR ABOUT PAGE
 .aboutHero {
-    background: url('../../assets/img/heros/arms_raised.jpg') no-repeat center center;
+    background: url('../../assets/img/heros/aboutHero.jpg') no-repeat top center;
     background-size: cover;
 }
 
@@ -284,14 +284,24 @@ a:hover {
 }
 
 // JOURNAL PAGE
+.journalHero {
+    background: url('../../assets/img/heros/journalHero.jpg') no-repeat top center;
+    background-size: cover;
+}
+
 .articleImg {
     height: 260px;
     width: 540px;
     object-fit: cover;
-    
 }
 
 // ARTICLE PAGE
 .articleText {
     line-height: $global-big-lineheight;
+}
+
+// PRESS PAGE
+.pressHero {
+    background: url('../../assets/img/heros/pressHero.jpg') no-repeat top center;
+    background-size: cover;
 }
